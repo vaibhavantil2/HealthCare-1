@@ -127,8 +127,8 @@ public class BmiHome extends Fragment {
         // Initializing Google AdMob
         mAdMobAdView = (AdView)view.findViewById(R.id.admob_adview);
         AdRequest adRequest = new AdRequest.Builder()
-                /*.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)*/
-                //.addTestDevice("1797D2757F5140AA8F98809B458DB26F")// real device id here
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice(device_id)// real device id here
                 .build();
         mAdMobAdView.loadAd(adRequest);
 
